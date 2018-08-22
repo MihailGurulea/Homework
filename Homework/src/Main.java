@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        //Factorial.FactorialNumbers();
+        Factorial.FactorialNumbers();
         //Retailer.RetailerSales();
     }
 }

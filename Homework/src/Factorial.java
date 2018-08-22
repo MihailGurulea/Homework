@@ -4,8 +4,7 @@ public class Factorial {
         long product = 1L;
         long counter = 1L;
         for (;i<=20;i++){
-            product = counter;
-            product = product * i;
+            product = counter * i;
             counter = product;
             System.out.println(counter);
         }
