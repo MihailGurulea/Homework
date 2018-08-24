@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class TestScoreStatistics {
-    public static void StudentScores() {
+    public static void studentScores() {
         Scanner s = new Scanner(System.in);
         int input = 0;
-        int min = 0;
+        int min = 99;
         int counter = 0;
         int max = 1;
         double average = 1;

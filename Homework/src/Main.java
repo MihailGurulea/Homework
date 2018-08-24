@@ -7,6 +7,6 @@ public class Main {
         //EvenEntryLoop.Number();
         //Inbetween.Integers();
         //Perfect.PerfectNumber();
-        TestScoreStatistics.StudentScores();
+        //TestScoreStatistics.studentScores();
     }
 }
