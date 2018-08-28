@@ -1,3 +1,5 @@
+package Group;
+
 import java.util.Scanner;
 
 public class Retailer {

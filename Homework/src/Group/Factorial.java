@@ -1,3 +1,5 @@
+package Group;
+
 public class Factorial {
     public static void FactorialNumbers(){
         long i = 1L;

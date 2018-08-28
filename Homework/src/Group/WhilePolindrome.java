@@ -1,3 +1,5 @@
+package Group;
+
 public class WhilePolindrome {
     public static void Polindrome(){
         int number = 1234321;

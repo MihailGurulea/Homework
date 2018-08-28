@@ -1,3 +1,5 @@
+package Group;
+
 public class Perfect {
     public static void PerfectNumber() {
         int i;
