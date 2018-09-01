@@ -1,4 +1,4 @@
-package Group;
+package OldHomework;
 
 import java.util.Scanner;
 

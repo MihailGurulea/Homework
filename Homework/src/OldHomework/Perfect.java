@@ -1,4 +1,4 @@
-package Group;
+package OldHomework;
 
 public class Perfect {
     public static void PerfectNumber() {

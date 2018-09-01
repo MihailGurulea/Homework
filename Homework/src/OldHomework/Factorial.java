@@ -1,4 +1,4 @@
-package Group;
+package OldHomework;
 
 public class Factorial {
     public static void FactorialNumbers(){

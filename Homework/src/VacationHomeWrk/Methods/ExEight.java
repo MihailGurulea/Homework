@@ -1,8 +1,8 @@
-package VacationHomeWrk;
+package VacationHomeWrk.Methods;
 
 import java.util.Scanner;
-
-public class Methods {
+////////////////////////////// Exercise 8 /////////////////////////////////////////////
+public class ExEight {
     Employee empOne;
     Employee empTwo;
 

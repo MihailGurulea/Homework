@@ -1,4 +1,4 @@
-package Group;
+package OldHomework;
 
 public class WhilePolindrome {
     public static void Polindrome(){
