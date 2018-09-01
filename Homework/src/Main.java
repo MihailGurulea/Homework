@@ -1,9 +1,7 @@
-import VacationHomeWrk.Methods;
+import VacationHomeWrk.DataTypes;
 
 public class Main {
     public static void main(String[] args) {
-        // Vacation Homework
-        Methods methods = new Methods();
-        methods.setEmployees();
+        DataTypes.exSix();
     }
 }
