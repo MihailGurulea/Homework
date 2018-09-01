@@ -1,7 +1,7 @@
-import VacationHomeWrk.DataTypes;
+import VacationHomeWrk.FlowControl;
 
 public class Main {
     public static void main(String[] args) {
-        DataTypes.exSix();
+        FlowControl.exFour();
     }
 }
