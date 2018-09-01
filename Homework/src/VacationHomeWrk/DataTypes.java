@@ -1,6 +1,7 @@
 package VacationHomeWrk;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class DataTypes {
@@ -89,17 +90,19 @@ public class DataTypes {
     }
 
     public static void exSix() {
-        String i = "go";
-        ArrayList<String> array = new ArrayList<>();
+        List<String> list = new ArrayList<>();
         Scanner s = new Scanner(System.in);
         System.out.println("Input from 4 to 5 words: ");
+        for (int i = 0; i < 5; i++) {
+            list.add(s.nextLine());
+        }
+        System.out.printf("%S used to be a nurse, \n", list.get(0));
+        System.out.printf("Nursery is not for any %S,\n", list.get(1));
+        System.out.printf("Nursery is a very %S profession,\n", list.get(2));
+        System.out.printf("Nursery %S is not even close to computer science\n", list.get(3));
+        if (list.get(4) != null) {
+            System.out.printf("Nursery is a very interesting %S \n", list.get(4));
+        }
 
-        while ( i != "stop"){
-            i = s.nextLine();
-            array.add(i);
-        }
-        for (String j : array){
-            System.out.println(j);
-        }
     }
 }
