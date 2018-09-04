@@ -23,8 +23,8 @@ public class Sandwich {
     }
 
     public void showSandwich(){
-        System.out.println(sandwichType);
-        System.out.println(breadType);
-        System.out.println(price);
+        System.out.println("Sandwich type: " + sandwichType);
+        System.out.println("BreadType: " + breadType);
+        System.out.println("Price: " + price);
     }
 }
