@@ -15,11 +15,15 @@ public class TestStudent {
         this.numberOfPointsEarned = s.nextInt();
     }
 
-    public void gpa(){
+    private double calculateGpa(){
+        return getNumberOfPointsEarned() / getNumberOfCreditHours();
+    }
+
+    public void showObject() {
         System.out.println("Student ID: " + getIdNumber());
         System.out.println("Number of credit hours earned: " + getNumberOfCreditHours());
         System.out.println("Number of points earned: " + getNumberOfPointsEarned());
-        System.out.println("Students GPA: " + (getNumberOfPointsEarned() / getNumberOfCreditHours()));
+        System.out.println("Students GPA: " + calculateGpa());
     }
 
     public int getIdNumber() {
