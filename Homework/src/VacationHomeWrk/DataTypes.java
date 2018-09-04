@@ -5,11 +5,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class DataTypes {
-    char firstName = 'M';
-    char lastName = 'G';
-    char middleName = 'M';
+    static char firstName = 'M';
+    static char lastName = 'G';
+    static char middleName = 'M';
 
-    public void exOne() {
+    public static void exOne() {
         System.out.println(lastName + "." + firstName + "." + middleName);
     }
 
@@ -100,7 +100,7 @@ public class DataTypes {
         System.out.printf("Nursery is not for any %S,\n", list.get(1));
         System.out.printf("Nursery is a very %S profession,\n", list.get(2));
         System.out.printf("Nursery %S is not even close to computer science\n", list.get(3));
-        if (list.get(4) != null) {
+        if (!list.get(4).isEmpty()) {
             System.out.printf("Nursery is a very interesting %S \n", list.get(4));
         }
 

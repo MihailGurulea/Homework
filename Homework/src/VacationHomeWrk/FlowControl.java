@@ -80,9 +80,9 @@ public class FlowControl {
 
     public static void exFour() {
         Random rand = new Random();
-        int a = 1;//rand.nextInt(9);
-        int b = 2;//rand.nextInt(9);
-        int c = 3;//rand.nextInt(9);
+        int a = rand.nextInt(9);
+        int b = rand.nextInt(9);
+        int c = rand.nextInt(9);
         int input1;
         int input2;
         int input3;
@@ -93,16 +93,16 @@ public class FlowControl {
         input2 = s.nextInt();
         input3 = s.nextInt();
         if (input1 == a || input1 == b || input1 == c) {
-            award += 1;
+            award++;
         }
         if (input2 == a || input2 == b || input2 == c) {
-            award += 1;
+            award++;
         }
         if (input3 == a || input3 == b || input3 == c) {
-            award += 1;
+            award++;
         }
         if (input1 == a && input2 == b && input3 == c) {
-            award = 4;
+            award++;
         }
         switch (award) {
             case 0:
