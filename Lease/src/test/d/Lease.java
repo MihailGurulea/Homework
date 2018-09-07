@@ -1,3 +1,5 @@
+package test.d;
+
 import java.util.Scanner;
 
 public class Lease {
@@ -14,10 +16,10 @@ public class Lease {
     }
 
     public void showValues(){
-        System.out.println("Name of the apartment: " + getName());
-        System.out.println("Number of the apartment: " + getNumber());
-        System.out.println("Rent of the apartment: " + getRent());
-        System.out.println("Terms of the rent: " + getTerm() + "\n");
+        System.out.println("Name of the apartment: " + this.getName());
+        System.out.println("Number of the apartment: " + this.getNumber());
+        System.out.println("Rent of the apartment: " + this.getRent());
+        System.out.println("Terms of the rent: " + this.getTerm() + "\n");
 
     }
 

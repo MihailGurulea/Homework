@@ -1,3 +1,8 @@
+package test.p;
+
+
+import test.d.Lease;
+
 public class TestLease {
     public static void main(String[] args) {
         Lease object1 = new Lease();
@@ -13,6 +18,7 @@ public class TestLease {
         object1.addPetFee();
         object1.showValues();
 
+        object2.setRent(3);
         object2.showValues();
         object3.showValues();
         object4.showValues();
