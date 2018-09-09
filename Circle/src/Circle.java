@@ -4,9 +4,7 @@ public class Circle {
     private double area;
 
     public Circle() {
-        this.radius = 1;
-        this.diameter = radius * 2;
-        this.area = (Math.PI * (radius * radius));
+        setRadius(1);
     }
 
     public void setRadius(double radius) {
