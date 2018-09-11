@@ -1,7 +1,5 @@
-import java.util.Scanner;
-
 public class TestBloodData {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         BloodData data1 = new BloodData();
         System.out.println("Blood type is: " + data1.getBloodType());
         System.out.println("Rh factor is: " + data1.getRhFactor());
@@ -14,5 +12,5 @@ public class TestBloodData {
         BloodData data2 = new BloodData(bloodType,rhFactor);
         System.out.println("Blood type is: " + data2.getBloodType());
         System.out.println("Rh factor is: " + data2.getRhFactor());
-    }
+    }*/
 }
