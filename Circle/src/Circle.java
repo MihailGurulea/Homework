@@ -7,6 +7,10 @@ public class Circle {
         setRadius(1);
     }
 
+    public Circle(double r){
+        setRadius(r);
+    }
+
     public void setRadius(double radius) {
         this.radius = radius;
         this.diameter = radius * 2;
