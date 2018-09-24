@@ -1,7 +1,7 @@
 public class Patient {
     private int idNumber;
     private int age;
-    BloodData bloodData = new BloodData();
+    private BloodData bloodData = new BloodData();
 
     public Patient() {
         this.idNumber = 0;
