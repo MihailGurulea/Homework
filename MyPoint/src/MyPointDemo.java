@@ -1,9 +1,17 @@
 public class MyPointDemo {
     public static void main(String[] args) {
-        MyPoint newPoint = new MyPoint(10,9);
-        MyPoint newpoint2 = new MyPoint();
+//        MyPoint newPoint = new MyPoint(10,9);
+//        MyPoint newPoint2 = new MyPoint();
+//        System.out.println(newPoint.distance());
 
-        System.out.println(newPoint.distance());
+//        MyCircle newCircle = new MyCircle();
+//        MyCircle newCircle2 = new MyCircle(19, 9, 3);
+//        System.out.println(newCircle2.toString());
+//        System.out.println(newCircle.toString());
+//        System.out.println("Area of the Circle: " + newCircle2.getArea());
+//        System.out.println("Circumference: " + newCircle2.getCircumference());
+//        System.out.println("Distance: " + newCircle.distance(newCircle2));
+
 
     }
 }
