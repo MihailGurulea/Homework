@@ -12,6 +12,11 @@ public class MyPointDemo {
 //        System.out.println("Circumference: " + newCircle2.getCircumference());
 //        System.out.println("Distance: " + newCircle.distance(newCircle2));
 
+//        MyTriangle newTriangle = new MyTriangle(5, 6, 6, 7, 7, 8);
+//        System.out.println(newTriangle.toString());
+//        System.out.println("Perimeter: " + newTriangle.getPerimeter());
+//        System.out.println("The type of he Triangle is: " + newTriangle.getType());
+
 
     }
 }
