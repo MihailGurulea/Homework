@@ -40,16 +40,14 @@ public class Account {
     }
 
     public Account deposit(double amount){
-        Account account = new Account(1, customer);
-        setBalance(getBalance()+amount);
-        return account;
+        this.setBalance(this.getBalance()+amount);
+        return this;
     }
 
     public Account withdraw(double amount){
-        Account account = new Account(1, customer);
-        if(account.getBalance() >= amount){
-            account.setBalance(account.getBalance() - amount);
-        } else System.out.println("Amount withdrawn exceeds the current balance!");
-        return account;
+        if(this.getBalance() >= amount){
+            this.setBalance(this.getBalance() - amount);
+        } else throw new IllegalArgumentException("Amount withdrawn exceeds the current balance!");
+        return this;
     }
 }
