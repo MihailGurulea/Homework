@@ -14,7 +14,7 @@ public class ValidatePassword {
 
             if (counterOfLowerCases < 2 && counterOfUpperCases < 2 && counterOfNumbers < 2) {
                 System.out.println("Please input a password that contains 2 Uppercase letters," +
-                        " 2 Lowercase letters and 2 numbers: ");
+                        " 2 Lowercase letters and 2 digits: ");
             }
 
             String password = s.nextLine();
@@ -32,6 +32,11 @@ public class ValidatePassword {
                 if (Character.isDigit(newPassword[i])) {
                     counterOfNumbers++;
                 }
+            }
+
+            if (counterOfLowerCases < 2 || counterOfUpperCases < 2 || counterOfNumbers < 2){
+                System.out.println("Your password contains only " + counterOfUpperCases + " uppercase letter(s), "
+                        + counterOfLowerCases + " lowercase letter(s) and " + counterOfNumbers + " digit(s)!");
             }
 
             if (counterOfLowerCases >= 2 && counterOfUpperCases >= 2 && counterOfNumbers >= 2) {
