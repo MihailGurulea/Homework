@@ -1,4 +1,4 @@
-import IonExercises.CountMovieSpaces;
+import IonExercises.ValidatePassword;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,6 +8,9 @@ public class Main {
         //System.out.println(ReplaceTimes.replaceCharTimes("OCA Java course for ultimate beginners", 'e', 'E', 2));
 
         //BabyNameComparison.nameComparison();
-        CountMovieSpaces.countSpaces("I'm going   to make him an offer he can't refuse.");
+        //CountMovieSpaces.countSpaces();
+        //CountMovieSpaces.countSpaces("I'm going to make him an offer he can't refuse.  ");
+        ValidatePassword.validate();
+
     }
 }
