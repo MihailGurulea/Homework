@@ -1,4 +1,4 @@
-import IonExercises.ValidatePassword;
+import IonExercises.PigLatin;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,7 +10,8 @@ public class Main {
         //BabyNameComparison.nameComparison();
         //CountMovieSpaces.countSpaces();
         //CountMovieSpaces.countSpaces("I'm going to make him an offer he can't refuse.  ");
-        ValidatePassword.validate();
+        //ValidatePassword.validate();
+        PigLatin.validate();
 
     }
 }
