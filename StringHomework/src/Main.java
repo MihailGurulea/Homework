@@ -1,3 +1,5 @@
+import IonExercises.ConstructID;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -13,6 +15,7 @@ public class Main {
         //PigLatin.validate();
         //PhoneNumberFormat.PhoneFormat();
         //Palindrome.palindrome("asdsadsa");
+        ConstructID.construct("Mihail Gurulea 97 Alba iulia");
 
     }
 }
