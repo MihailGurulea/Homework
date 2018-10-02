@@ -1,4 +1,4 @@
-import IonExercises.PigLatin;
+import IonExercises.PhoneNumberFormat;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,7 +11,8 @@ public class Main {
         //CountMovieSpaces.countSpaces();
         //CountMovieSpaces.countSpaces("I'm going to make him an offer he can't refuse.  ");
         //ValidatePassword.validate();
-        PigLatin.validate();
+        //PigLatin.validate();
+        PhoneNumberFormat.PhoneFormat();
 
     }
 }
