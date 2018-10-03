@@ -36,6 +36,7 @@ public class PigLatin {
         System.out.println("Please input a the word: ");
 
         String word = s.nextLine();
+        word = word.toLowerCase();
         char[] newPassword = word.toCharArray();
         char firstConsonant;
         char secondConsonant;
