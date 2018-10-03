@@ -1,4 +1,4 @@
-import IonExercises.PhoneNumberFormat;
+import IonExercises.PigLatin;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,8 +12,8 @@ public class Main {
         //CountMovieSpaces.countSpaces();
         //CountMovieSpaces.countSpaces("I'm going to make him an offer he can't refuse.  ");
         //ValidatePassword.validate();
-        //PigLatin.validate();
-        PhoneNumberFormat.PhoneFormat();
+        PigLatin.validate();
+        //PhoneNumberFormat.PhoneFormat();
         //Palindrome.palindrome("asdsadsa");
         //ConstructID.construct("Mihail Gurulea Nicolae", "97 1 Alba Iulia");
 
