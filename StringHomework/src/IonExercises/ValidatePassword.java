@@ -10,9 +10,9 @@ public class ValidatePassword {
         while (sentinel) {
             int counterOfUpperCases = 0;
             int counterOfLowerCases = 0;
-            int counterOfNumbers = 0;
+            int counterOfDigits = 0;
 
-            if (counterOfLowerCases < 2 && counterOfUpperCases < 2 && counterOfNumbers < 2) {
+            if (counterOfLowerCases < 2 && counterOfUpperCases < 2 && counterOfDigits < 2) {
                 System.out.println("Please input a password that contains 2 Uppercase letters," +
                         " 2 Lowercase letters and 2 digits: ");
             }
@@ -30,16 +30,16 @@ public class ValidatePassword {
                 }
 
                 if (Character.isDigit(newPassword[i])) {
-                    counterOfNumbers++;
+                    counterOfDigits++;
                 }
             }
 
-            if (counterOfLowerCases < 2 || counterOfUpperCases < 2 || counterOfNumbers < 2){
+            if (counterOfLowerCases < 2 || counterOfUpperCases < 2 || counterOfDigits < 2){
                 System.out.println("Your password contains " + counterOfUpperCases + " uppercase letter(s), "
-                        + counterOfLowerCases + " lowercase letter(s) and " + counterOfNumbers + " digit(s)!");
+                        + counterOfLowerCases + " lowercase letter(s) and " + counterOfDigits + " digit(s)!");
             }
 
-            if (counterOfLowerCases >= 2 && counterOfUpperCases >= 2 && counterOfNumbers >= 2) {
+            if (counterOfLowerCases >= 2 && counterOfUpperCases >= 2 && counterOfDigits >= 2) {
                 System.out.println("The password you've provided is secure!");
                 sentinel = false;
             }
