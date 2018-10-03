@@ -1,16 +1,26 @@
 package IonExercises;
 
 public class ConstructID {
-    public static void construct(String string){
-        char [] charString = string.toCharArray();
+    public static void construct(String name, String address) {
         String finalString = "";
-        for(int i = 0; i < charString.length; i++){
-            if(Character.isUpperCase(charString[i])){
-                finalString += charString[i];
-            } else if(Character.isDigit(charString[i])){
-                finalString +=charString[i];
+        char[] charAddress = address.toCharArray();
+
+        String[] s = name.split(" ");
+        String nameInitials = "";
+        String tempDigit = "";
+
+        for (int i = 0; i < s.length; i++){
+            nameInitials += s[i].charAt(0);
+        }
+
+        nameInitials = nameInitials.toUpperCase();
+
+        for (int i = 0; i < charAddress.length; i++){
+            if(Character.isDigit(charAddress[i])){
+                tempDigit += charAddress[i];
             }
         }
-        System.out.println("Your ID is: " + finalString.substring(0,finalString.length()-1) );
+
+        System.out.println("Your ID is: " + nameInitials.concat(tempDigit));
     }
 }

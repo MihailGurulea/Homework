@@ -15,7 +15,7 @@ public class Main {
         //PigLatin.validate();
         //PhoneNumberFormat.PhoneFormat();
         //Palindrome.palindrome("asdsadsa");
-        ConstructID.construct("Mihail Gurulea 97 Alba iulia");
+        ConstructID.construct("Mihail Gurulea Nicolae", "97 1 Alba Iulia");
 
     }
 }
