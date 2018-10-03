@@ -35,7 +35,7 @@ public class ValidatePassword {
             }
 
             if (counterOfLowerCases < 2 || counterOfUpperCases < 2 || counterOfNumbers < 2){
-                System.out.println("Your password contains only " + counterOfUpperCases + " uppercase letter(s), "
+                System.out.println("Your password contains " + counterOfUpperCases + " uppercase letter(s), "
                         + counterOfLowerCases + " lowercase letter(s) and " + counterOfNumbers + " digit(s)!");
             }
 
