@@ -25,7 +25,7 @@ public class PhoneNumberFormat {
                 continue label;
             }
 
-            System.out.println("Formated number:" + "(" + newString.substring(0,3) + ")" + newString.substring(3,7) + "-" + newString.substring(7));
+            System.out.println("Formated number:" + "(" + newString.substring(0,3) + ")" + " " + newString.substring(3,7) + "-" + newString.substring(7));
         }
     }
 }
