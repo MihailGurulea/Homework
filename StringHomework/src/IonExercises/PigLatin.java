@@ -46,7 +46,7 @@ public class PigLatin {
             second = newPassword[1];
             third = newPassword[2];
             latinWord = word.substring(3) + first + second + third + "ay";
-        }else if (PigLatin.isConsonant(newPassword[0]) && PigLatin.isConsonant(newPassword[1])) {
+        } else if (PigLatin.isConsonant(newPassword[0]) && PigLatin.isConsonant(newPassword[1])) {
             first = newPassword[0];
             second = newPassword[1];
             latinWord = word.substring(2) + first + second + "ay";
