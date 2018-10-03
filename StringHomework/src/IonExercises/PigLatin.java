@@ -37,27 +37,27 @@ public class PigLatin {
 
         String word = s.nextLine();
         char[] newPassword = word.toCharArray();
-        char first;
-        char second;
-        char third;
+        char firstConsonant;
+        char secondConsonant;
+        char thirdConsonant;
 
         if (PigLatin.isConsonant(newPassword[0]) && PigLatin.isConsonant(newPassword[1]) && PigLatin.isConsonant(newPassword[2])) {
-            first = newPassword[0];
-            second = newPassword[1];
-            third = newPassword[2];
-            latinWord = word.substring(3) + first + second + third + "ay";
+            firstConsonant = newPassword[0];
+            secondConsonant = newPassword[1];
+            thirdConsonant = newPassword[2];
+            latinWord = word.substring(3) + firstConsonant + secondConsonant + thirdConsonant + "ay";
         } else if (PigLatin.isConsonant(newPassword[0]) && PigLatin.isConsonant(newPassword[1])) {
-            first = newPassword[0];
-            second = newPassword[1];
-            latinWord = word.substring(2) + first + second + "ay";
+            firstConsonant = newPassword[0];
+            secondConsonant = newPassword[1];
+            latinWord = word.substring(2) + firstConsonant + secondConsonant + "ay";
         } else if (PigLatin.isConsonant(newPassword[0])) {
-            first = newPassword[0];
-            latinWord = word.substring(1) + first + "ay";
+            firstConsonant = newPassword[0];
+            latinWord = word.substring(1) + firstConsonant + "ay";
         }
 
         if (newPassword[0] == 'y') {
-            first = newPassword[0];
-            latinWord = word.substring(1) + first + "ay";
+            firstConsonant = newPassword[0];
+            latinWord = word.substring(1) + firstConsonant + "ay";
         }
 
         if (PigLatin.isVowel(newPassword[0])) {
