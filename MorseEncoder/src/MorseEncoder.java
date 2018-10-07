@@ -4,46 +4,121 @@ public class MorseEncoder {
         char[] arrayOfChars = input.toCharArray();
         String returnArrayOfChars = "";
 
-        for(int i = 0; i < arrayOfChars.length; i++){
-            switch(arrayOfChars[i]){
-                case 'a': returnArrayOfChars += ".- "; break;
-                case 'b': returnArrayOfChars += "-... "; break;
-                case 'c': returnArrayOfChars += "-.-. "; break;
-                case 'd': returnArrayOfChars += "-.. "; break;
-                case 'e': returnArrayOfChars += ". "; break;
-                case 'f': returnArrayOfChars +=  "..-. "; break;
-                case 'g': returnArrayOfChars +=  "--. "; break;
-                case 'h': returnArrayOfChars +=  ".... "; break;
-                case 'i': returnArrayOfChars +=  ".. "; break;
-                case 'j': returnArrayOfChars +=  ".--- "; break;
-                case 'k': returnArrayOfChars +=  "-.- "; break;
-                case 'l': returnArrayOfChars +=  ".-.. "; break;
-                case 'm': returnArrayOfChars +=  "-- "; break;
-                case 'n': returnArrayOfChars +=  "-. "; break;
-                case 'o': returnArrayOfChars +=  "--- "; break;
-                case 'p': returnArrayOfChars +=  ".--. "; break;
-                case 'q': returnArrayOfChars +=  "--.- "; break;
-                case 'r': returnArrayOfChars +=  ".-. "; break;
-                case 's': returnArrayOfChars +=  "... "; break;
-                case 't': returnArrayOfChars +=  "- "; break;
-                case 'u': returnArrayOfChars +=  "..- "; break;
-                case 'v': returnArrayOfChars +=  "...- "; break;
-                case 'w': returnArrayOfChars +=  ".-- "; break;
-                case 'x': returnArrayOfChars +=  "-..- "; break;
-                case 'y': returnArrayOfChars +=  "-.-- "; break;
-                case 'z': returnArrayOfChars +=  "--.. "; break;
-                case '1': returnArrayOfChars +=  ".---- "; break;
-                case '2': returnArrayOfChars +=  "..--- "; break;
-                case '3': returnArrayOfChars +=  "...-- "; break;
-                case '4': returnArrayOfChars +=  "....- "; break;
-                case '5': returnArrayOfChars +=  "..... "; break;
-                case '6': returnArrayOfChars +=  "-.... "; break;
-                case '7': returnArrayOfChars +=  "--... "; break;
-                case '8': returnArrayOfChars +=  "---.. "; break;
-                case '9': returnArrayOfChars +=  "----. "; break;
-                case '0': returnArrayOfChars +=  "----- "; break;
-                case ' ': returnArrayOfChars += "   "; break;
-                default: returnArrayOfChars += arrayOfChars[i];
+        for (char c : arrayOfChars) {
+            switch (c) {
+                case 'a':
+                    returnArrayOfChars += ".- ";
+                    break;
+                case 'b':
+                    returnArrayOfChars += "-... ";
+                    break;
+                case 'c':
+                    returnArrayOfChars += "-.-. ";
+                    break;
+                case 'd':
+                    returnArrayOfChars += "-.. ";
+                    break;
+                case 'e':
+                    returnArrayOfChars += ". ";
+                    break;
+                case 'f':
+                    returnArrayOfChars += "..-. ";
+                    break;
+                case 'g':
+                    returnArrayOfChars += "--. ";
+                    break;
+                case 'h':
+                    returnArrayOfChars += ".... ";
+                    break;
+                case 'i':
+                    returnArrayOfChars += ".. ";
+                    break;
+                case 'j':
+                    returnArrayOfChars += ".--- ";
+                    break;
+                case 'k':
+                    returnArrayOfChars += "-.- ";
+                    break;
+                case 'l':
+                    returnArrayOfChars += ".-.. ";
+                    break;
+                case 'm':
+                    returnArrayOfChars += "-- ";
+                    break;
+                case 'n':
+                    returnArrayOfChars += "-. ";
+                    break;
+                case 'o':
+                    returnArrayOfChars += "--- ";
+                    break;
+                case 'p':
+                    returnArrayOfChars += ".--. ";
+                    break;
+                case 'q':
+                    returnArrayOfChars += "--.- ";
+                    break;
+                case 'r':
+                    returnArrayOfChars += ".-. ";
+                    break;
+                case 's':
+                    returnArrayOfChars += "... ";
+                    break;
+                case 't':
+                    returnArrayOfChars += "- ";
+                    break;
+                case 'u':
+                    returnArrayOfChars += "..- ";
+                    break;
+                case 'v':
+                    returnArrayOfChars += "...- ";
+                    break;
+                case 'w':
+                    returnArrayOfChars += ".-- ";
+                    break;
+                case 'x':
+                    returnArrayOfChars += "-..- ";
+                    break;
+                case 'y':
+                    returnArrayOfChars += "-.-- ";
+                    break;
+                case 'z':
+                    returnArrayOfChars += "--.. ";
+                    break;
+                case '1':
+                    returnArrayOfChars += ".---- ";
+                    break;
+                case '2':
+                    returnArrayOfChars += "..--- ";
+                    break;
+                case '3':
+                    returnArrayOfChars += "...-- ";
+                    break;
+                case '4':
+                    returnArrayOfChars += "....- ";
+                    break;
+                case '5':
+                    returnArrayOfChars += "..... ";
+                    break;
+                case '6':
+                    returnArrayOfChars += "-.... ";
+                    break;
+                case '7':
+                    returnArrayOfChars += "--... ";
+                    break;
+                case '8':
+                    returnArrayOfChars += "---.. ";
+                    break;
+                case '9':
+                    returnArrayOfChars += "----. ";
+                    break;
+                case '0':
+                    returnArrayOfChars += "----- ";
+                    break;
+                case ' ':
+                    returnArrayOfChars += "   ";
+                    break;
+                default:
+                    returnArrayOfChars += c;
             }
         }
         System.out.println("The encoded string: " + returnArrayOfChars);
@@ -51,124 +126,124 @@ public class MorseEncoder {
     public static void morseDecoder(String input){
         input = input.toLowerCase();
         String [] arrayOfWords = input.split("   ");
-        String returnArrayOfChars = "";
-        for(int i = 0; i < arrayOfWords.length; i++) {
-            String [] arrayOfChars = arrayOfWords[i].split(" ");
+        StringBuilder returnArrayOfChars = new StringBuilder();
+        for (String word : arrayOfWords) {
+            String[] arrayOfChars = word.split(" ");
             for (int j = 0; j < arrayOfChars.length; j++) {
                 switch (arrayOfChars[j]) {
                     case ".-":
-                        returnArrayOfChars += "a";
+                        returnArrayOfChars.append("a");
                         break;
                     case "-...":
-                        returnArrayOfChars += "b";
+                        returnArrayOfChars.append("b");
                         break;
                     case "-.-.":
-                        returnArrayOfChars += "c";
+                        returnArrayOfChars.append("c");
                         break;
                     case "-..":
-                        returnArrayOfChars += "d";
+                        returnArrayOfChars.append("d");
                         break;
                     case ".":
-                        returnArrayOfChars += "e";
+                        returnArrayOfChars.append("e");
                         break;
                     case "..-.":
-                        returnArrayOfChars += "f";
+                        returnArrayOfChars.append("f");
                         break;
                     case "--.":
-                        returnArrayOfChars += "g";
+                        returnArrayOfChars.append("g");
                         break;
                     case "....":
-                        returnArrayOfChars += "h";
+                        returnArrayOfChars.append("h");
                         break;
                     case "..":
-                        returnArrayOfChars += "i";
+                        returnArrayOfChars.append("i");
                         break;
                     case ".---":
-                        returnArrayOfChars += "j";
+                        returnArrayOfChars.append("j");
                         break;
                     case "-.-":
-                        returnArrayOfChars += "k";
+                        returnArrayOfChars.append("k");
                         break;
                     case ".-..":
-                        returnArrayOfChars += "l";
+                        returnArrayOfChars.append("l");
                         break;
                     case "--":
-                        returnArrayOfChars += "m";
+                        returnArrayOfChars.append("m");
                         break;
                     case "-.":
-                        returnArrayOfChars += "n";
+                        returnArrayOfChars.append("n");
                         break;
                     case "---":
-                        returnArrayOfChars += "o";
+                        returnArrayOfChars.append("o");
                         break;
                     case ".--.":
-                        returnArrayOfChars += "p";
+                        returnArrayOfChars.append("p");
                         break;
                     case "--.-":
-                        returnArrayOfChars += "q";
+                        returnArrayOfChars.append("q");
                         break;
                     case ".-.":
-                        returnArrayOfChars += "r";
+                        returnArrayOfChars.append("r");
                         break;
                     case "...":
-                        returnArrayOfChars += "s";
+                        returnArrayOfChars.append("s");
                         break;
                     case "-":
-                        returnArrayOfChars += "t";
+                        returnArrayOfChars.append("t");
                         break;
                     case "..-":
-                        returnArrayOfChars += "u";
+                        returnArrayOfChars.append("u");
                         break;
                     case "...-":
-                        returnArrayOfChars += "v";
+                        returnArrayOfChars.append("v");
                         break;
                     case ".--":
-                        returnArrayOfChars += "w";
+                        returnArrayOfChars.append("w");
                         break;
                     case "-..-":
-                        returnArrayOfChars += "x";
+                        returnArrayOfChars.append("x");
                         break;
                     case "-.--":
-                        returnArrayOfChars += "y";
+                        returnArrayOfChars.append("y");
                         break;
                     case "--..":
-                        returnArrayOfChars += "z";
+                        returnArrayOfChars.append("z");
                         break;
                     case ".----":
-                        returnArrayOfChars += "1";
+                        returnArrayOfChars.append("1");
                         break;
                     case "..---":
-                        returnArrayOfChars += "2";
+                        returnArrayOfChars.append("2");
                         break;
                     case "...--":
-                        returnArrayOfChars += "3";
+                        returnArrayOfChars.append("3");
                         break;
                     case "....-":
-                        returnArrayOfChars += "4";
+                        returnArrayOfChars.append("4");
                         break;
                     case ".....":
-                        returnArrayOfChars += "5";
+                        returnArrayOfChars.append("5");
                         break;
                     case "-....":
-                        returnArrayOfChars += "6";
+                        returnArrayOfChars.append("6");
                         break;
                     case "--...":
-                        returnArrayOfChars += "7";
+                        returnArrayOfChars.append("7");
                         break;
                     case "---..":
-                        returnArrayOfChars += "8";
+                        returnArrayOfChars.append("8");
                         break;
                     case "----.":
-                        returnArrayOfChars += "9";
+                        returnArrayOfChars.append("9");
                         break;
                     case "-----":
-                        returnArrayOfChars += "0";
+                        returnArrayOfChars.append("0");
                         break;
                     default:
-                        returnArrayOfChars += "";
+                        returnArrayOfChars.append("");
                 }
             }
-            returnArrayOfChars += " ";
+            returnArrayOfChars.append(" ");
         }
         System.out.println("The decoded string: " + returnArrayOfChars);
     }

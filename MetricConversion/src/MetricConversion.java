@@ -4,8 +4,8 @@ class MetricConversion {
     }
 
     private static boolean isPartOf(String string, String [] array){
-        for(int i = 0; i < array.length; i++){
-            if(string.equals(array[i])){
+        for (String anArray : array) {
+            if (string.equals(anArray)) {
                 return true;
             }
         }
@@ -13,9 +13,9 @@ class MetricConversion {
     }
 
     void metricConversion(String input) {
-        String[] length = {"kilometers", "meters", "centimeters", "inches", "feet", "yards", "miles"};
-        String[] mass = {"kilograms", "grams", "milligrams", "ounces", "pounds", "ton"};
-        String[] volume = {"liters", "gallons", "quads", "pints"};
+        final String[] length = {"kilometers", "meters", "centimeters", "inches", "feet", "yards", "miles"};
+        final String[] mass = {"kilograms", "grams", "milligrams", "ounces", "pounds", "ton"};
+        final String[] volume = {"liters", "gallons", "quads", "pints"};
         String[] arrayOfParsedInput = input.split(" ");
         String amount = "";
         arrayOfParsedInput[6] = arrayOfParsedInput[6].substring(0,arrayOfParsedInput[6].length()-1);
