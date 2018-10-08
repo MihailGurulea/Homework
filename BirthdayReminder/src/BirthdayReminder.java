@@ -27,10 +27,12 @@ public class BirthdayReminder {
             sentinel2 = s.nextLine();
             if(sentinel2.equals("ZZZ")) break;
             int counter2 = 0;
-            for(String str : theArray) {
-                if (!sentinel2.matches(str)) {
-                    System.out.println(str.substring(str.length() - 6));
+            for(int i = 0; i < theArray.length; i++) {
+                String [] tempString = theArray[i].split(" ");
+                if (sentinel2.equals(tempString[i])) {
+                    System.out.println(tempString[1]);
                     counter2++;
+                    break;
                 }
             }
             if(counter2 == 0){
