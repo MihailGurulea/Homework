@@ -14,7 +14,7 @@ class SavingsAccount {
     }
 
     void calculateMonthlyInterest() {
-        this.savingsBalance = (((((double)annualInterestRate / 12) / 100) * savingsBalance) + savingsBalance);
+        this.savingsBalance = ((((double)annualInterestRate / 12) / 100) * savingsBalance) + savingsBalance;
     }
 
     static void modifyInterestRate(int annualInterestRate) {
