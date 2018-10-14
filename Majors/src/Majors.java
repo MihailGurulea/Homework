@@ -1,18 +1,18 @@
 class Majors {
-    private String [] businessDivision = {"ACC", "CIS"};
-    private String [] scienceDivision = {"CHEM", "PHYS"};
-    private String [] humanitiesDivision = {"ENG", "HIS"};
+    private final String [] businessDivision = {"ACC", "CIS"};
+    private final String [] scienceDivision = {"CHEM", "PHYS"};
+    private final String [] humanitiesDivision = {"ENG", "HIS"};
 
-    public Majors(String[] businessDivision, String[] scienceDivision, String[] humanitiesDivision) {
-        this.businessDivision = businessDivision;
-        this.scienceDivision = scienceDivision;
-        this.humanitiesDivision = humanitiesDivision;
+    public Majors() {
+
     }
 
     public boolean equals(Object obj){
         if(obj instanceof Majors){
             Majors m = (Majors) obj;
-            boolean isEqual = m.equals(this);
+            boolean isEqual = m.businessDivision.equals(this.businessDivision)
+                    && m.scienceDivision.equals(this.scienceDivision)
+                    && m.humanitiesDivision.equals(this.humanitiesDivision);
             return isEqual;
         } else return false;
 
