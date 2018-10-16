@@ -36,14 +36,14 @@ public class IntegerSet {
     }
 
     public void insertElement(int element) {
-        if (element < this.integerSet.length || element >= 0) {
-            this.integerSet[element - 1] = true;
+        if (element < this.integerSet.length && element >= 0) {
+            this.integerSet[element] = true;
         }
     }
 
     public void deleteElement(int element) {
-        if (element < this.integerSet.length || element >= 0) {
-            this.integerSet[element - 1] = false;
+        if (element < this.integerSet.length && element >= 0) {
+            this.integerSet[element] = false;
         }
     }
 
