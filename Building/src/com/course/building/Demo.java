@@ -17,4 +17,10 @@ public class Demo {
             System.out.println(b.toString());
         }
     }
+
+    static void printFromTo(int from, int to){
+        for(int i = from; i <= to; i++){
+            System.out.println(i);
+        }
+    }
 }
