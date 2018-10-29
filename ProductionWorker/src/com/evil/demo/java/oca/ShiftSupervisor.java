@@ -1,10 +1,12 @@
 package com.evil.demo.java.oca;
 
+import java.time.LocalDate;
+
 public class ShiftSupervisor extends Employee{
     private double salary;
     private double earlyBonus;
 
-    public ShiftSupervisor(String empName, String empNumber, String hireDate, double salary, double earlyBonus) {
+    public ShiftSupervisor(String empName, String empNumber, LocalDate hireDate, double salary, double earlyBonus) {
         super(empName, empNumber, hireDate);
         this.salary = salary;
         this.earlyBonus = earlyBonus;

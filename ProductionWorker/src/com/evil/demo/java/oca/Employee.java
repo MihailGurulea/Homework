@@ -1,11 +1,21 @@
 package com.evil.demo.java.oca;
 
+import java.time.LocalDate;
+import java.time.Month;
+
 public class Employee {
     private String empName;
     private String empNumber;
-    private String hireDate;
+    private LocalDate hireDate;
 
-    public Employee(String empName, String empNumber, String hireDate) {
+    public Employee() {
+        this.empName = "John";
+        this.hireDate = LocalDate.of(2015, Month.JANUARY,1);
+    }
+
+
+
+    public Employee(String empName, String empNumber, LocalDate hireDate) {
         this.empName = empName;
         this.empNumber = empNumber;
         this.hireDate = hireDate;
@@ -27,11 +37,11 @@ public class Employee {
         this.empNumber = empNumber;
     }
 
-    public String getHireDate() {
+    public LocalDate getHireDate() {
         return hireDate;
     }
 
-    public void setHireDate(String hireDate) {
+    public void setHireDate(LocalDate hireDate) {
         this.hireDate = hireDate;
     }
 

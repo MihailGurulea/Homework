@@ -5,6 +5,9 @@ import com.evil.java.oca.demo.testsandassignments.FinalExam;
 import com.evil.java.oca.demo.testsandassignments.Lab;
 import com.evil.java.oca.demo.testsandassignments.PassFailExam;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class CourseGrades implements Analyzable{
     private GradedActivity[] grades = new GradedActivity[4];
 
@@ -13,6 +16,13 @@ public class CourseGrades implements Analyzable{
         setPassFailExam(passFailExam);
         setEssay(essay);
         setFinalExam(finalExam);
+    }
+
+    CourseGrades(){
+        grades[0] = new Lab(99);
+        grades[1] = new PassFailExam(77);
+        grades[2] = new Essay(56);
+        grades[3] = new FinalExam(81);
     }
 
     private void setLab(Lab lab) {
@@ -47,33 +57,35 @@ public class CourseGrades implements Analyzable{
 
     @Override
     public GradedActivity getHighest() {
-        double tempMax = grades[0].getScore();
-        int returnIndex = 0;
+        /*GradedActivity tempMax = grades[0];
         for (GradedActivity grade : grades) {
-            if (tempMax < grade.getScore()) {
-                tempMax = grade.getScore();
+            if (tempMax.getScore() < grade.getScore()) {
+                tempMax = grade;
             }
         }
         for(int i = 0; i < grades.length; i++){
-            if(tempMax == grades[i].getScore())
-                returnIndex = i;
-        }
-        return grades[returnIndex];
+//            if(tempMin == grades[i].getScore())
+//                returnIndex = i;
+//        }
+//        return grades[returnIndex];*/
+        return Arrays.stream(grades).max(Comparator.comparing(GradedActivity::getScore)).get();
     }
 
     @Override
     public GradedActivity getLowest() {
-        double tempMin = grades[0].getScore();
-        int returnIndex = 0;
-        for (GradedActivity grade : grades) {
-            if (tempMin > grade.getScore()) {
-                tempMin = grade.getScore();
-            }
-        }
-        for(int i = 0; i < grades.length; i++){
-            if(tempMin == grades[i].getScore())
-                returnIndex = i;
-        }
-        return grades[returnIndex];
+//        double tempMin = grades[0].getScore();
+//        int returnIndex = 0;
+//        for (GradedActivity grade : grades) {
+//            if (tempMin > grade.getScore()) {
+//                tempMin = grade.getScore();
+//            }
+//        }
+//        for(int i = 0; i < grades.length; i++){
+//            if(tempMin == grades[i].getScore())
+//                returnIndex = i;
+//        }
+//        return grades[returnIndex];
+
+        return Arrays.stream(grades).min(Comparator.comparing(GradedActivity::getScore)).get();
     }
 }
